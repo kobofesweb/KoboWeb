@@ -1,0 +1,373 @@
+@charset "UTF-8";
+
+
+html {
+	background-image: url(../images/mokume02.jpg);
+	width: 100%;
+}
+body {
+	position: relative;
+	width: 1040px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../images/index_center.jpg);
+	background-size: 1040px;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#hometop {
+	display: block;
+	margin-left: 1px;
+	margin-right: auto;
+	width: 200px;
+}
+
+#cash {
+	width: 200px;
+	/*position: absolute;*/
+}
+
+/* ナビ */
+
+.list01 {
+	margin-top: 15px;
+}
+.cancell01, .cancel02 {
+	pointer-events: none;
+}
+#nav li {
+	position: relative;
+	width: 170px;
+	height: 40px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+}
+#nav > li {
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+}
+#nav li:last-child {
+	border-bottom: none;
+}/*
+#nav li:hover > ul > li {
+	border-bottom: 1px solid #fff;
+}*/
+#nav li:hover > ul > li {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#nav li > ul > li:last-child {
+	border-bottom: none;
+}
+/*
+#nav li a {
+	display: block;
+	width: 159px;
+	height: 40px;
+	color: #fff;
+	font-size: larger;
+	line-height: 2;
+	padding: 0px 5px;
+	background-color: rgba(10,10,10,0.7);
+	text-decoration: none;
+}
+*/
+
+.cancel01, .litop {
+	display: block;
+	width: 159px;
+	height: 40px;
+	color: #fff;
+	font-size: 124%;
+	line-height: 2;
+	padding: 0px 5px;
+	background-color: rgba(10,10,10,0.7);
+	text-decoration: none;
+	font-family: "HGP行書体","HG正楷書体-PRO",cursive;
+}
+
+.list02, .cancel02 {
+	display: block;
+	width: 159px;
+	height: 40px;
+	color: #fff;
+	font-size: 124%;
+	line-height: 2;
+	padding: 0px 5px;
+	background-color: rgba(10,10,10,0.7);
+	text-decoration: none;
+}
+
+.cancel01:hover, .litop:hover {
+	color: #fff;
+	border-left: 8px solid #902;
+	background-color: #777;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.list02:hover, .cancel02:hover {
+	color: #fff;
+	border-left: 8px solid #902;
+	background-color: #777;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#nav > li:hover > a {
+	background-color: #777;
+}
+#nav > li:hover li:hover > a {
+	background-color: #777;
+}
+#nav li:hover > ul > li {
+	overflow: visible;
+	top: -40px;
+	left: 130px;
+	height: 40px;
+}
+#nav li ul li {
+	overflow: hidden;
+	height: 0;
+	left: 125px;
+}
+#nav li ul li a {
+	background-color: rgba(10,10,10,0.9);
+	font-family: "HGP行書体","HG正楷書体-PRO",cursive;
+	
+}
+#nav li ul:before {
+	position: absolute;
+	content: "";
+	top: 14px;
+	left: 96px;
+}
+#nav li:hover ul li ul li:hover > a {
+	background-color: #777;
+}
+#nav, .stno {
+	list-style: none;
+}
+#navdiv{
+	margin-top: 50px;
+	margin-left: 0px;
+	width: 230px;
+	height: 330px;
+}
+
+.hummenu {
+	display: none;
+}
+
+
+
+/* ナビf */
+
+
+.atwitter {
+	display: none;
+}
+.btwitter {
+	width: 250px;
+	margin-top: 70px;
+	position: absolute;
+}
+.twitter-timeline {
+	background-color: rgba(10,10,10,0.5);
+}
+.imgtwitter {
+	margin: 0px auto 15px 40px;
+}
+
+
+
+h1 {
+	text-shadow: #eee 1px 2px;
+	color: #000;
+}
+#word01,#word02 {
+	font-size: 300%;
+	position: absolute;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	font-family: "HGP行書体","HG正楷書体-PRO",cursive;
+}
+#word01 {
+	top: 40px;
+	left: 800px;
+	animation: fadein1 2s ease 0s 1 normal;
+    -webkit-animation: fadein1 2s ease 0s 1 normal;
+	-moz-animation: fadein1 2s ease 0s 1 normal;
+}
+@keyframes fadein1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes fadein1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes fadein1 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#word02 {
+	top: 100px;
+	left: 700px;
+	animation: fadein2 3s ease 0s 1 normal;
+    -webkit-animation: fadein2 3s ease 0s 1 normal;
+	-moz-animation: fadein2 3s ease 0s 1 normal;
+}
+@keyframes fadein2 {
+    0% {opacity: 0;}
+	50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes fadein2 {
+    0% {opacity: 0;}
+	50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes fadein2 {
+    0% {opacity: 0;}
+	50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+h2 {
+	color: #000;
+	text-align: center;
+	text-shadow: #fff 2px 2px;
+}
+h3 {
+	color: #fff;
+	text-align: center;
+	text-shadow: #000 1px 1px;
+	font-family: "HG正楷書体-PRO","HGP行書体",cursive, Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+}
+main {
+	display: block;
+	margin-top: 100px;
+}
+main div div {
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(200, 150, 10, 0.3));
+	border: solid 2px;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: 3px;
+	margin-bottom: 5px;
+	width: 73%;
+	padding: 8px;
+	font-family: "HG正楷書体-PRO","HGP行書体",cursive, Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	line-height: 1.5;
+}
+#start p {
+	text-align: center;
+}
+
+main p {
+	color: #fff;
+}
+.textcen {
+	text-align: center;
+}
+footer {
+	text-align: center;
+	color: #fff;
+}
+.redword {
+	color: #f00;
+	font-size: 120%;
+	text-shadow: 1px 1px 0 #000;
+	font-weight: bold;
+}
+.palink a {
+	color: #fff;
+}
+
+.banner {
+	width: 95%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.halfbanner {
+	margin-top: 10px;
+	margin-left: 7px;
+	margin-right: auto;
+}
+.inban {
+	color: #fff;
+	font-weight: bold;
+	text-shadow: #000 1px 1px;
+	font-size: 120%;
+	text-align: center;
+}
+#inbn {
+	display: block;
+	margin-top: 10px;
+}
+
+/* ページトップへスクロール */
+#pageTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+#pageTop a {
+  display: block;
+  z-index: 999;
+	padding: 9px 0 0 11px;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #8e8;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+}
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.slide {
+	display: none;
+
+
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  padding: 15px 35px;
+  width: 500px;
+  color: #333;
+  background: rgba(80,150,240,0.7);
+}
+
+.slideun {
+  text-align: center;
+  color: rgba(80,150,240,0.7);
+  background: rgba(80,150,240,0.7);
+}
+.slidepic {
+	width: 500px;
+}
+
+#imgtop01{
+	display: none;
+}

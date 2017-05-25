@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+
+html {
+	background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3)), url(../images/index_back02.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-attachment: fixed;
+}
+body {
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ホバーヘッダー ここから */
+#hometop {
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 200px;
+}
+
+.stalking {
+	position: fixed;
+	top: 0px;
+	/*left:calc(50% - 200px/2);*/
+	z-index: 100;
+}
+
+#cash {
+  width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(100, 100, 100, 0.5)
+	/*position: absolute;*/
+}
+
+#container{
+}
+
+.for_stalk{
+	margin-top: 108px;
+}
+
+/* ホバーヘッダーここまで */
+
+/* ナビ */
+
+#navdiv {
+	display: none;
+}
+
+nav.menu {
+	width: 25px;
+	height: 25px;
+	top: 30px;
+	right: 10px;
+	position: fixed;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 100;
+	background: rgba(10,10,10,0.8);
+	padding: 5px;
+	border-radius: 3px;
+	}
+nav .menu1 {
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	top: 5px;
+	position: absolute;
+	} 
+nav .menu2 {
+	width: 25px;
+	height: 2px;
+	background-color: #fff;
+	top: 13px;
+	position: absolute;
+	} 
+nav .menu3 {
+	width:25px;
+	height:2px;
+	background-color: #fff;
+	top:21px;
+	position:absolute;
+	}
+nav .menu1,nav .menu2,nav .menu3 {
+	transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out; /* Opera */
+	-moz-transition: all 0.5s ease-out; /* Firefox */
+	-webkit-transition: all 0.5s ease-out; /* GoogleChrome, Safari */
+	-ms-transition: all 0.5s ease-out; /* IE */
+	}
+
+nav .menuclick1 {
+	top:13px;
+	-o-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	transform: rotate(225deg);
+	}
+nav .menuclick2	{
+	background-color:rgba(255,255,255,0);
+	}
+nav .menuclick3	{
+	top:13px;
+	-o-transform: rotate(-225deg);
+	-moz-transform: rotate(-225deg);
+	-webkit-transform: rotate(-225deg);
+	-ms-transform: rotate(-225deg);
+	transform: rotate(-225deg);
+	}					 
+#menu {
+	display: none;
+	position: fixed;
+	overflow: hidden;
+	top: 40px;
+	z-index: 100;
+	padding: 5px;
+	background-color: rgba(10,10,10,0.7);
+	width: 100%;
+	margin-top: 65px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#menu li {
+	border-bottom: 1px solid #eee;
+}
+#menu li:last-child {
+	border-bottom: none;
+}
+#menu li a {
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 2;
+	text-decoration: none;
+	font-size: 120%;
+	font-family: "HG正楷書体-PRO","HGP行書体",cursive, Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+	
+/* ナビf */
+
+.imgtwitter{
+	display: block;
+	margin: 5px auto 10px auto;
+}
+
+.atwitter {
+	width: 90%;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.btwitter {
+	display: none;
+}
+.twitter-timeline {
+	background-color: rgba(255,255,255,0.5);
+}
+
+h1 {
+	text-shadow: #eee 1px 2px;
+	color: #000;
+}
+#word01,#word02 {
+	display: none;
+}
+
+h2 {
+	color: #000;
+	text-align: center;
+	text-shadow: #fff 2px 2px;
+}
+h3 {
+	color: #fff;
+	text-align: center;
+	text-shadow: #000 1px 1px;
+	font-family: "HG正楷書体-PRO","HGP行書体",cursive, Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+}
+main {
+	display: block;
+	margin-top: 20px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+main div div {
+	/*background-color: rgba(10,10,10,0.4);*/
+	background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.3));
+	border: solid 2px;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	width: 95%;
+	padding: 10px;
+	line-height: 1.5;
+	font-family: "HG正楷書体-PRO","HGP行書体",cursive, Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+main p {
+	color: #fff;
+}
+.textcen {
+	text-align: center;
+}
+footer {
+	text-align: center;
+	color: #000;
+}
+.redword {
+	color: #f00;
+	font-size: 120%;
+	text-shadow: 1px 1px 0 #000;
+	font-weight: bold;
+}
+.palink a {
+	color: #fff;
+}
+
+.banner {
+	width: 90%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.halfbanner {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.inban {
+	font-weight: bold;
+	font-size: 120%;
+	text-align: center;
+	color: #000;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+/* ページトップへスクロール */
+#pageTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+#pageTop a {
+  display: block;
+  z-index: 999;
+	padding: 9px 0 0 11px;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #8e8;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.7;
+}
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+
+.slide {
+	margin: 0 auto;
+	/*padding: 15px 30px;*/
+	width: 100%;
+	color: #333;
+	background: linear-gradient(-45deg, rgba(10, 10, 10, 0.5), rgba(100, 100, 100, 0.5));
+	/*border: solid 2px;
+	border-color: #555;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.4);*/
+}
+
+.slideun {
+  text-align: center;
+  color: #fff;
+  background-image: #fff;
+}
+.slidepic {
+	width: 100%;
+}
+
+
+#imgtop01 {
+	width: 100%;
+}
+#imgtop02 {
+	width: 100%;
+}
