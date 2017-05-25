@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+body{
+	background-image: url(../images/index_background.jpg);
+	background-size: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	text-shadow: #bbb 3px 3px;
+	text-decoration: underline;
+	color: #e00;
+	text-align: center;
+  }
+main div {
+	background-color: #eea;
+	border: solid 2px;
+	border-radius: 15px;
+	overflow: hidden;
+	padding: auto;
+	margin: auto;
+	width: 90%;
+}
+main p {
+	text-align: center;
+}
+footer {
+	text-align: center;
+}
