@@ -34,7 +34,7 @@ body {
 .list01 {
 	margin-top: 15px;
 }
-.cancell01, .cancel02 {
+.cancel01, .cancel02 {
 	pointer-events: none;
 }
 #nav li {
