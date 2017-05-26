@@ -55,25 +55,30 @@ jQuery(function($){
 	});
 });
 
+// スクロールに追従するheader
 jQuery(function($){
+	// #imgtop01の読み込みを待つ
 	setTimeout(function(){
 		var cash = $('#cash');
 		var container = $('#container');
 		var scroll = $('#imgtop01').height() + 8;
 
+		// 画像サイズが異様に小さい場合には再度取得を試みる
 		if(scroll < 100){
 			scroll = $('#imgtop01').height() + 8;
 		}
 
 		$(window).scroll(function() {
 			if($(window).scrollTop() > scroll) {
+				// #imgtop01が隠れている場合
 				cash.addClass('stalking');
 				container.addClass('for_stalk');
 			} else {
+				// #imgtop01が隠れていない場合
 				cash.removeClass('stalking');
 				container.removeClass('for_stalk');
 			}
 		});
-	}, 200);
+	}, 500);
 });
 
